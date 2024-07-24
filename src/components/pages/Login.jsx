@@ -18,7 +18,7 @@ function Login() {
   const loginHandler = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://startech-ecom-api-elc7.onrender.com/login", {
+      const res = await fetch("https://startech-ecom-api-elc7.onrender.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

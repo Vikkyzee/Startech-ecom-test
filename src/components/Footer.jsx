@@ -2,19 +2,18 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoTiktok } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="bg-blue-950 px-[5%] py-[3%] mt-10 flex justify-between text-white items-center">
+    <div className="bg-blue-950 px-[5%] py-[3%] flex md:flex-row md: justify-between text-white xs:flex-col xs:space-y-5 xs:items-center">
        <div>
-        <p className="text-[24px] text-white font-bold">Star Tech</p>
+        <p className="text-[34px] text-white font-bold">Star Tech</p>
        </div>
         <div>
-            <h3 className="mb-[10px] text-lg">Useful Links</h3>
+            <h3 className="mb-[10px] text-lg font-bold">Useful Links</h3>
             <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
+                    <Link to="/"><li>Home</li></Link>
                 <li>
                     <a href="">Contact</a>
                 </li>
@@ -27,7 +26,7 @@ function Footer() {
             </ul>
         </div>
         <div>
-            <h3 className="mb-[10px] text-lg">Follow us on our Socials</h3>
+            <h3 className="mb-[10px] text-lg font-bold">Follow us on our Socials</h3>
             <ul className="flex gap-[20px] text-2xl justify center">
                 <li><FaFacebook/></li>
                 <li><FaInstagram/></li>
