@@ -9,9 +9,9 @@ function Detail() {
     const shoeitem = product.find((item)=> item._id === shoeid)
 
   return (
-    <div className="flex px-[5%] py-[3%] justify-between bg-[]">
-        <div>
-            <img src={"https://startech-ecom-api-elc7.onrender.com/" + shoeitem?.img} alt="" className="h-[200px] w-[200px]" />
+    <div className="flex xs:flex-col md:flex-row px-[5%] py-[3%] justify-between space-x-4">
+        <div className="m-auto xs:w-[90%] md:w-[50%]">
+            <img src={"https://startech-ecom-api-elc7.onrender.com/" + shoeitem?.img} alt="" className="h-[200px] w-[200px] rounded-lg" />
         </div>
         <div className="lg:w-[50%] md:w-[45%] w-[50%] lg:space-x-0 md:space-x-0 space-x-[10px]">
             <h2 className="lg:text-2xl md:text-2xl text-[15px] lg:mx-0 md:mx-0 mx-2 font-bold  mb-[10px] border-b-2">{shoeitem?.name}</h2>

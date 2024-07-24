@@ -14,7 +14,7 @@ function ProductItem({item}) {
   return (
     <div className="m-4 border-2 border-blue-500 w-max rounded shadow-lg shadow-white transform hover:scale-110 transition ease duration-700 bg-yellow-400  ">
       <Link to={`/detail/${item._id}`}>
-        <img src={"http://localhost:8000/" + item.img} alt="" className="h-[200px] w-[200px] rounded-lg" />
+        <img src={"https://startech-ecom-api-elc7.onrender.com/" + item.img} alt="" className="h-[200px] w-[200px] rounded-lg" />
       </Link>
       
      <div className="text-center my-5">
