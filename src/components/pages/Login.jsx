@@ -41,7 +41,7 @@ function Login() {
     }
   }
   return (
-    <div className=" flex justify-center items-center bg-yellow-500 my-[5%] mx-[30%] ">
+    <div className=" flex justify-center items-center bg-yellow-500  ">
       <div className="w-96 p-6 shadow-lg  rounded-lg">
         <form onSubmit={loginHandler}>
           <div className="mb-3">
