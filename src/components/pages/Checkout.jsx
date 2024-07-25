@@ -42,7 +42,7 @@ function Checkout() {
     <div className="flex mx-[10%] my-[5%]">
         <div className="w-[50%]">
         <h1 className="text-center mb-[10px] text-2xl font-bold">Order Summary</h1>
-        <table className="w-[90%] mx-auto">
+        <table className="sm: border lg:w-[90%] mx-auto">
             <thead>
                 <th>Name</th>
                 <th>Img</th>
