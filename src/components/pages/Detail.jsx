@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate} from "react-router-dom"
 import { useContext } from "react"
 import EcomContext from "../../context/EcomContext"
 
@@ -7,13 +7,13 @@ function Detail() {
     const shoeid = param.id
     const {product, addToCart, isAuthenticated} = useContext(EcomContext)
     const shoeitem = product.find((item)=> item._id === shoeid)
+    const redirect = useNavigate()
 
     const login = ()=>{
         if(!isAuthenticated) {
           redirect("/login")
         }
     }
-    
   return (
     <div className="flex xs:flex-col md:flex-row px-[5%] py-[3%] justify-between space-x-4">
         <div className="m-auto xs:w-[90%] md:w-[50%]">
