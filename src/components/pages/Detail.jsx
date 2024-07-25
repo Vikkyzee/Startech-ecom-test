@@ -26,7 +26,7 @@ function Detail() {
             <p className="mb-[10px] lg:text-[17px] md:text-[17px] text-[11.5px]">
                 Category: <span className="text-blue-950 italic font-bold">{shoeitem?.category.name}</span>
             </p>
-            <button onClick={isAuthenticated ? ()=> addToCart({...shoeitem, quantity: 1}(item._id)) : login} className="bg-blue-950 text-white rounded p-[10px]">Add to cart</button>
+            <button onClick={isAuthenticated ? ()=> addToCart({...shoeitem, quantity: 1}) : login} className="bg-blue-950 text-white rounded p-[10px]">Add to cart</button>
         </div>
     </div>
   )
