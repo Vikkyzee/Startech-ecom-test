@@ -41,20 +41,22 @@ function Login() {
     }
   }
   return (
-    <div className=" flex justify-center items-center h-screen bg-orange my-[5%] mx-[30%] ">
-      <form onSubmit={loginHandler}>
-        <div className="mb-3">
-          <input type="email" className="outline outline-1  w-full p-[10px] " placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}/>
-        </div>
+    <div className=" flex justify-center items-center bg-yellow-500 h-screen my-[5%] mx-[30%] ">
+      <div className="w-96 p-6 shadow-lg bg-white rounded-lg">
+        <form onSubmit={loginHandler}>
+          <div className="mb-3">
+            <input type="email" className="outline outline-1  w-full p-[10px] " placeholder="Email"
+              onChange={(e) => setEmail(e.target.value)}/>
+          </div>
 
-        <div className="mb-3">
-          <input type="password" className="outline outline-1 w-full p-[10px]" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        <div>
-          <button className="bg-blue-950 p-[10px] text-white rounded-lg">Log In</button>
-        </div>
-      </form>
+          <div className="mb-3">
+            <input type="password" className="outline outline-1 w-full p-[10px]" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+          </div>
+          <div>
+            <button className="bg-blue-950 p-[10px] text-white rounded-lg">Log In</button>
+          </div>
+        </form>
+      </div>
 
     </div>
   )
