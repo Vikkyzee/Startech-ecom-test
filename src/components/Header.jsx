@@ -64,7 +64,7 @@ function logout() {
         <div onClick={()=> setOpen(!open)} className={`fixed lg:hidden top-0 w-full bg-black z-[20] ${open ? "opacity-100 pointer-events-auto": "opacity-0 pointer-events-none"}`}></div>
         <div className={`fixed lg:hidden left-0 top-0 w-[300px] h-screen overflow-auto z-[30] bg-white transition-all duration-500 ${open ? "translate-x-[0px]": "translate-x-[-500px]"}`}>
             <nav className="grid grid-cols-2 text-center p-[10%] mt-[-24%] gap-[1.7%] bg-blue-950 lg:flex space-x-4 text-white text-[25px] pt-20 px-10">
-                <Link to href="/">Home</Link>
+                <Link to="">Home</Link>
                 <Link to="/product">Products</Link>
                 <Link to="/cart" className="relative">
                     <IoCart className="text-xl" />
