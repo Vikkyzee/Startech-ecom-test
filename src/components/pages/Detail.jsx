@@ -5,9 +5,15 @@ import EcomContext from "../../context/EcomContext"
 function Detail() {
     const param = useParams()
     const shoeid = param.id
-    const {product, addToCart} = useContext(EcomContext)
+    const {product, addToCart, isAuthenticated} = useContext(EcomContext)
     const shoeitem = product.find((item)=> item._id === shoeid)
 
+    const login = ()=>{
+        if(!isAuthenticated) {
+          redirect("/login")
+        }
+    }
+    
   return (
     <div className="flex xs:flex-col md:flex-row px-[5%] py-[3%] justify-between space-x-4">
         <div className="m-auto xs:w-[90%] md:w-[50%]">
@@ -20,7 +26,7 @@ function Detail() {
             <p className="mb-[10px] lg:text-[17px] md:text-[17px] text-[11.5px]">
                 Category: <span className="text-blue-950 italic font-bold">{shoeitem?.category.name}</span>
             </p>
-            <button onClick={()=> addToCart({...shoeitem, quantity: 1})} className="bg-blue-950 text-white rounded p-[10px]">Add to cart</button>
+            <button onClick={isAuthenticated ? ()=> addToCart({...shoeitem(item._id), quantity: 1}) : login} className="bg-blue-950 text-white rounded p-[10px]">Add to cart</button>
         </div>
     </div>
   )
