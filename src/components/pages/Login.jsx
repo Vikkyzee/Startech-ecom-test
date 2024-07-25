@@ -42,7 +42,7 @@ function Login() {
   }
   return (
     <div className=" flex justify-center items-center max-h-screen bg-yellow-500  ">
-      <div className="w-96 p-6 shadow-lg  rounded-lg">
+      <div className="w-96 p-6 shadow-lg to-white rounded-lg">
         <form onSubmit={loginHandler}>
           <div className="mb-3">
             <input type="email" className="outline outline-1  w-full p-[10px] " placeholder="Email"
