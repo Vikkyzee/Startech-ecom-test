@@ -41,11 +41,11 @@ function Login() {
     }
   }
   return (
-    <div className=" flex justify-center items-center max-h-screen bg-yellow-500  ">
-      <div className="w-96 p-6 shadow-lg to-white rounded-lg">
+    <div className=" flex justify-center items-center bg-yellow-500  ">
+      <div className="w-96 p-6 shadow-lg bg-white rounded-md">
         <form onSubmit={loginHandler}>
           <div className="mb-3">
-            <input type="email" className="outline outline-1  w-full p-[10px] " placeholder="Email"
+            <input type="email" className="border  w-full p-[10px] text-base px-2 py-1 focus:outline-none focus:ring-0 focus: border-gray-600 " placeholder="Email"
               onChange={(e) => setEmail(e.target.value)}/>
           </div>
 
