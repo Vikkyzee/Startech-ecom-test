@@ -48,7 +48,7 @@ function Register() {
         }
     }
   return (
-    <div className="flex justify-center items-center bg-yellow-500 px-6 py-6 ">
+    <div className="border-red-800 border-8 flex justify-center items-center bg-yellow-500 px-6 py-6 hover:border-t-4">
         <div className="w-96 p-6 shadow-lg shadow-slate-950 bg-blue-300 rounded-md">
             <h1 className="text-center mb-[10px] text-2xl font-bold">Register Here</h1>
             <form onSubmit={registerHandler}>
