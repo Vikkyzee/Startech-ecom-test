@@ -48,34 +48,36 @@ function Register() {
         }
     }
   return (
-    <div className="my-[5%] mx-[30%]">
-        <h1 className="text-center mb-[10px] text-2xl font-bold">Register Here</h1>
-        <form onSubmit={registerHandler}>
-            <div className="mb-3">
-                <input type="text" className= "outline outline-1 w-full p-[10px]" placeholder="First Name"  onChange={(e)=> setFirstName(e.target.value)}/>
-            </div>
-            <div className="mb-3">
-                <input type="text" className="outline outline-1 w-full p-[10px]" placeholder="Last Name" onChange={(e)=> setLastName(e.target.value)} />
-            </div>
-            <div className="mb-3">
-                <input type="text" className="outline outline-1 w-full p-[10px]" placeholder="Phone" onChange={(e)=> setPhone(e.target.value)} />
-            </div>
-            <div className="mb-3">
-                <textarea type="text" className="outline outline-1 w-full p-[10px]" placeholder="Delivery Address"></textarea>
-            </div>
-            <div className="mb-3">
-                <textarea type="email" className="outline outline-1 w-full p-[10px]" placeholder="Email" onChange={(e)=> setEmail(e.target.value)}></textarea>
-            </div>
-            <div className="mb-3">
-                <textarea type="password" className="outline outline-1 w-full p-[10px]" placeholder="Password" onChange={(e)=> setPassword(e.target.value)}></textarea>
-            </div>
-            <div className="mb-3">
-                <textarea type="password" className="outline outline-1 w-full p-[10px]" placeholder="Confirm Password" onChange={(e)=> setConfirmPassword(e.target.value)}></textarea>
-            </div>
-            <div>
-                <button className="bg-blue-950 p-[10px] text-white rounded-lg">LOGIN</button>
-            </div>
-        </form>
+    <div className="flex justify-center items-center bg-yellow-500 px-6 py-6 ">
+        <div className="w-96 p-6 shadow-lg shadow-slate-950 bg-blue-300 rounded-md">
+            <h1 className="text-center mb-[10px] text-2xl font-bold">Register Here</h1>
+            <form onSubmit={registerHandler}>
+                <div className="mb-3">
+                    <input type="text" className= "outline outline-1 w-full p-[10px]" placeholder="First Name"  onChange={(e)=> setFirstName(e.target.value)}/>
+                </div>
+                <div className="mb-3">
+                    <input type="text" className="outline outline-1 w-full p-[10px]" placeholder="Last Name" onChange={(e)=> setLastName(e.target.value)} />
+                </div>
+                <div className="mb-3">
+                    <input type="text" className="outline outline-1 w-full p-[10px]" placeholder="Phone" onChange={(e)=> setPhone(e.target.value)} />
+                </div>
+                <div className="mb-3">
+                    <textarea type="text" className="outline outline-1 w-full p-[10px]" placeholder="Delivery Address"></textarea>
+                </div>
+                <div className="mb-3">
+                    <textarea type="email" className="outline outline-1 w-full p-[10px]" placeholder="Email" onChange={(e)=> setEmail(e.target.value)}></textarea>
+                </div>
+                <div className="mb-3">
+                    <textarea type="password" className="outline outline-1 w-full p-[10px]" placeholder="Password" onChange={(e)=> setPassword(e.target.value)}></textarea>
+                </div>
+                <div className="mb-3">
+                    <textarea type="password" className="outline outline-1 w-full p-[10px]" placeholder="Confirm Password" onChange={(e)=> setConfirmPassword(e.target.value)}></textarea>
+                </div>
+                <div>
+                    <button className="bg-blue-950 p-[10px] text-white rounded-lg">LOGIN</button>
+                </div>
+            </form>
+        </div>
     </div>
   )
 }
