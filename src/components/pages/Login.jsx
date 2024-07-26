@@ -1,5 +1,5 @@
 import { useState, useContext } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Navigate } from "react-router-dom"
 import EcomContext from "../../context/EcomContext"
 import AuthContext from "../../context/AuthContext"
 import useLocalStorage from "../../Hooks/useLocalStorage"
