@@ -1,9 +1,13 @@
 import { FaDeleteLeft } from "react-icons/fa6";
 import { useContext } from "react";
 import EcomContext from "../../context/EcomContext";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 function Cart() {
-    const { cartItems, updateQuantity, totalAmount, removeItem } = useContext(EcomContext);
+    const { cartItems, updateQuantity, totalAmount, removeItem, isAuthenticated } = useContext(EcomContext);
+
+    if (!isAuthenticated) {
+        return <Navigate to="/login"/>
+    }
     const cartTable = (
         <div>
             <table className="w-[90%] mx-auto text-center justify-center">

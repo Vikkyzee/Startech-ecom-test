@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 import { useContext, useEffect } from "react"
 import EcomContext from "../../context/EcomContext"
 import { useSearchParams } from "react-router-dom"
@@ -9,6 +9,11 @@ function ThankYou() {
   const [searchParams] = useSearchParams()
   const tx_ref = searchParams.get("tx_ref")
   const transaction_id = searchParams.get("transaction_id")
+
+  if (isAuthenticated) {
+    return <Navigate to="/"/>
+}
+
 
   useEffect(()=>{
     if(transaction_id && tx_ref) {
