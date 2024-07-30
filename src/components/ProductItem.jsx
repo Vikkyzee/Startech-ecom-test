@@ -18,7 +18,7 @@ function ProductItem({item}) {
       </Link>
       
      <div className="text-center my-5">
-        <p className="text-xl text-black font-bold =">{item.name}</p>
+        <p className="text-xl text-black font-bold">{item.name}</p>
         <p className="py-3 text-xl text-black font-bold">₦{item.price}</p>
         <button onClick={isAuthenticated ? ()=> addToCart(item._id) : login} className="bg-blue-950 text-white rounded p-[10px]">Add To Cart</button>
      </div>
