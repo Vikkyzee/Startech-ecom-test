@@ -29,17 +29,17 @@ function App() {
         path="/"
         element={
           <>
-            <Login/>
+            <Featured/>
+            <TopSelling/>
           </>
         }
         />
-      <Route path="/featured" element={<Featured/>}/>
-      <Route path="/topselling" element={<TopSelling/>}/>
       <Route path="/product" element={<Products/>}/>
       <Route path="/detail/:id" element={<Detail/>}/>
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/checkout" element={<Checkout/>}/>
       <Route path="/register" element={<Register/>}/>
+      <Route path="/login" element={<Login/>}/>
       <Route path="/thankyou" element={<ThankYou/>}/>
     </Routes>
     <Footer/>
