@@ -29,7 +29,7 @@ function Cart() {
                             </td>
                             <td>{item.product.name}</td>
                             <td>
-                                <img src={"https://startech-ecom-api-elc7.onrender.com" + item.product.img} alt="" className="h-[50px]" />
+                                <img src={"https://startech-ecom-api-elc7.onrender.com/" + item.product.img} alt="" className="h-[50px]" />
                             </td>
                             <td>₦{item.product.price}</td>
                             <td><input type="number" min="1" value={item.quantity} className="outline outline-1" onChange={(e) => updateQuantity(item.product._id, e.target.value)} /></td>
